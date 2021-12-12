@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+Signup
+{% endblock %}
+
+
+
+{% block body %}
+
+<div style="width: 100%; padding: 10px 10px;">
+    <div style="float:left; ">
+        <img id="company_img2" src="/static/images/download.png" >
+    </div>
+    <div class="box1">
+        <form method="post" action="/create">
+            <br><br><br>
+            <label for="name_user" id="name_user">Name</label><br>
+            <input type="text" id="name_user2" name="name_user" placeholder="Name"><br><br>
+            <label for="email_signup" id="email_signup2">Email</label><br>
+            <input type="email" id="email_user2" name="email_signup" placeholder="Email" ><br><br>
+            <label for="password_signup" id="password_signup2">Password</label><br>
+            <input type="password" id="password_signup3" name="password_signup" ><br><br>
+
+            <input type="submit" value="Register" id="button_regi">
+
+        </form>
+    </div>
+
+</div>
+{% endblock %}

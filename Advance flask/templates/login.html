@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+
+{% block link %}
+{% endblock %}
+
+{% block title %}
+Login
+{% endblock %}
+
+{% block body %}
+
+<div style="width: 100%; padding: 10px 10px;">
+    <div style="float:left; ">
+        <img id="company_img" src="/static/images/download.png" >
+    </div>
+    <div class="box1">
+        <form method='post' action="dashboard">
+            <br><br><br>
+            <label for="email_user" id="email">Email</label><br>
+            <input type="email" id="email_user" name="email_user" placeholder="Enter your email"><br><br>
+            <label for="password_user" id="pass_user">Password</label><br>
+            <input type="password" id="password_user" name="password_user" placeholder="******************"><br>
+            <input type="submit" value="Submit" id="button" >
+
+        </form>
+    </div>
+
+</div>
+
+
+
+{% endblock %}

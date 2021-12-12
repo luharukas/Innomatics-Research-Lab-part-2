@@ -1,0 +1,16 @@
+{% extends 'layout2.html' %}
+
+{% block title %}
+History
+{% endblock %}
+
+{% block body %}
+<br />
+<h3 style="font-size: 50px;font-family: 'Courier New', Courier, monospace;margin-left: 15%; "   >History of shortened URLs</h3>
+<br />
+<ul>
+{% for tri in short_tri %}
+    <li>{{tri}}</li>
+{% endfor %}
+</ul>
+{% endblock %}

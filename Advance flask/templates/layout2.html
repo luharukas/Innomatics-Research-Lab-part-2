@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> URL Shortner</title>
+    <style type="text/css">
+        body {
+            background-color:#7b76e3;
+            background-size: cover;
+            height: auto;
+            margin-top: 10px;
+            padding: 10px;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+
+<body>
+    <nav>
+        <ul>
+            <li style="font-family: 'Times New Roman', Times, serif;color: grey;font-size: 30px;">
+                <a href='/saver'>Home</a>
+            </li>
+            <li style="font-family: 'Times New Roman', Times, serif;color: grey;font-size: 30px;">
+                <a href='/history'>History</a>
+            </li>
+        </ul>
+    </nav>
+    {% block body %}
+    {% endblock %}
+    
+
+</body>
+
+</html>

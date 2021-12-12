@@ -1,0 +1,17 @@
+{% extends 'layout2.html' %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block body %}
+<br />
+<h1 style="font-family: 'Courier New', Courier, monospace;color: blue;font-size: 50px;text-align: center;">
+    Welcome to URL Shortner</h1>
+<br />
+<form method='post' action="/save">
+    <input type='text' name='in_1' placeholder='Enter original URL here' style="width: 60%;height: 10%x;border-radius: 2%;margin-left: 20%;"><br><br>
+    <button style="border-radius: 75px;height: 30px;width: 30%;margin-left: 35%;">Shorten</button>
+</form>
+
+{% endblock %}
